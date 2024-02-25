@@ -30,3 +30,25 @@ int GetNumberOfElements(string[] array)
 }
 int b = GetNumberOfElements(array);
 //Console.Write(b);
+
+
+//3. Формирование массива по заданному условию   
+
+string[] array2 = new string[b];
+int i = 0;
+
+for (int j = 0; j < array.Length; j++)
+{
+     int l = GetNumberOfChar(array[j]);
+    if (l <= 3)
+    {
+        array2[i] = array[j];
+        i++;
+    }
+}
+
+string[] array = {"Hello", "my", "2", "world", ":-)"};
+foreach (string e in array2)
+{
+    Console.Write(e + " ");
+}
